@@ -14,30 +14,80 @@ To compile the project on your system, you'll need
 - c++ compiler
 - cmake
 
-### macOS
-We will use homebrew in order to install the required dependencies and then run the compilation through cmake
+## macOS
+
+> [!IMPORTANT]
+> You'll likely be asked to accept things with admin credentials
 
 1. Clone repository and build the project
-```zsh
-$> git clone --recursive https://github.com/KarolGutkowski/xLungs3DExplorer.git
-$> cd xLungs3DExplorer
-xLungs3DExplorer> ./scripts/prepare_and_build_mac.sh
+
+```bash
+git clone --recursive https://github.com/KarolGutkowski/xLungs3DExplorer.git
+cd xLungs3DExplorer
+./scripts/prepare_and_build_mac.sh
 ```
 
 2. Run the project
+
 In order to run the project you'll need to head to the build directory that is
 
-```zsh
-xLungs3DExplorer> cd build
+```bash
+cd build
 ```
 
 Then copy the nodules folder (with stl meshes) and clustering file (CSV with clustering data and radiomics) to this folder.
 
 Run the app
-```zsh
+```bash
+./app_file_path
+```
+
+## Windows
+
+> [!IMPORTANT]
+> You'll likely need admin capabilities to install the software
+
+1. Clone repository
+```bash
+git clone --recursive https://github.com/KarolGutkowski/xLungs3DExplorer.git
+```
+
+2. Build the project
+### Windows Terminal/Powershell
+For convenience we'll be installing chocolatey (a popular package manager for windows). 
+
+```bash
+cd xLungs3DExplorer
+./scripts/prepare_and_build_win_terminal.ps1
+```
+
+### Manual
+Make sure you have
+- CMake
+- c++ compiler (like MinGW)
+
+```bash
+cd xLungs3DExplorer
+mkdir build
+cd build
+cmake -S .. -B .
+cmake --build .
+```
+
+3. Run the project
+
+In order to run the project, you'll need to head to the build directory, that is
+
+```bash
+cd build
+```
+
+Then copy the nodules folder (with stl meshes) and clustering file (CSV with clustering data and radiomics) to this folder.
+
+Run the app
+```bash
 ./app_file_path
 ```
 
 
-### Windows
 
