@@ -1,4 +1,4 @@
-# 3D Exploration Tool for Lung Tumors Data from xLugs
+# 3D Exploration Tool for Lung Tumors Data from xLungs
 
 ## Description
 This project is a 3D environment that allows you to interactively analyze the data from the [xLungs](https://www.mi2.ai/research-grants.html#x-lungs-2021-2024) project.
@@ -19,7 +19,7 @@ To compile the project on your system, you'll need
 > [!IMPORTANT]
 > You'll likely be asked to accept things with admin credentials
 
-1. Clone repository and build the project
+## 1. Clone repository and build the project
 
 ```bash
 git clone --recursive https://github.com/KarolGutkowski/xLungs3DExplorer.git
@@ -27,7 +27,7 @@ cd xLungs3DExplorer
 ./scripts/prepare_and_build_mac.sh
 ```
 
-2. Run the project
+## 2. Run the project
 
 In order to run the project you'll need to head to the build directory that is
 
@@ -47,12 +47,12 @@ Run the app
 > [!IMPORTANT]
 > You'll likely need admin capabilities to install the software
 
-1. Clone repository
+## 1. Clone repository
 ```bash
 git clone --recursive https://github.com/KarolGutkowski/xLungs3DExplorer.git
 ```
 
-2. Build the project
+## 2. Build the project
 ### Windows Terminal/Powershell
 For convenience we'll be installing chocolatey (a popular package manager for windows). 
 
@@ -74,7 +74,7 @@ cmake -S .. -B .
 cmake --build .
 ```
 
-3. Run the project
+## 3. Run the project
 
 In order to run the project, you'll need to head to the build directory, that is
 
