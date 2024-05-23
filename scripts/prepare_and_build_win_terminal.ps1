@@ -85,7 +85,7 @@ $directoryPath = "build"
 if (-Not (Test-Path -Path $directoryPath)) {
     # Directory does not exist, so create it
     try {
-        New-Item -Path $directoryPath -ItemType Directory
+        mkdir build
         Write-Host "Directory created at $directoryPath" -ForegroundColor Green
     } catch {
         Write-Host "Failed to create directory at $directoryPath" -ForegroundColor Red
