@@ -41,7 +41,7 @@ clang_path=$(which clang)
 if [ -z "$clang_path" ]; then
   echo "Clang is not installed. Installing CMake..."
 
-  brew install clang
+  brew install llvm 
 
   if [-n "$(which clang)" ]; then
         echo -e "${GREEN}Clang installed successfully.${NC}"
