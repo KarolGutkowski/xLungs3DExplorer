@@ -45,7 +45,7 @@ int main(int argc, char** argv)
 
     auto clustering = CSVReader::get_nodules_clustering_map(clustering_file_path.value());
 
-    auto shader = Shader("./shaders/shader.glsl");
+    auto shader = Shader("../shaders/shader.glsl");
     auto meshes = MeshesLoader::load_clustering_data(nodules_folders_path.value(), clustering, shader);
      
     auto camera_postion = glm::vec3(0.0f, 100.0f, 100.0f);
